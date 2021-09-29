@@ -1,0 +1,78 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 95%;
+    height: 95%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: linen;
+}
+
+.funicular-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-areas: 
+    "funicular1 funicular2"
+    "funicular3 funicular4"
+    "footer footer";
+}
+
+.funicular-image {
+    background-color: linen;
+    height: 400px;
+    width: 600px;
+}
+
+.funicular-item {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    border: solid black 1px;
+    padding: 3px;
+}
+
+.item1 {
+    grid-area: "funicular1";
+}
+
+.item2 {
+    grid-area: "funicular2";
+}
+
+.item3 {
+    grid-area: "funicular3";
+}
+
+.item4 {
+    grid-area: "funicular3";
+}
+
+.footer {
+    grid-area: "footer";
+    align-self: center;
+    background-color: linen;
+    width: 100%;
+    height: 100%;
+}
